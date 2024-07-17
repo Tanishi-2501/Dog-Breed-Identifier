@@ -1,0 +1,74 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:         Basset_hound_01034.jpg  label:               basset hound
+ 2 key:               Beagle_01170.jpg  label:                     beagle
+ 3 key:                     cat_07.jpg  label:                        cat
+ 4 key:     Golden_retriever_05182.jpg  label:           golden retriever
+
+     MATCH:
+
+        Basset_hound_01034.jpg: 
+Real:               basset hound   Classifier:           basset, basset hound
+
+                    cat_07.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat
+
+    Golden_retriever_05182.jpg: 
+Real:           golden retriever   Classifier:               golden retriever
+
+ NOT A MATCH:
+
+              Beagle_01170.jpg: 
+Real:                     beagle   Classifier:  walker hound, walker foxhound
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+     MATCH:
+
+        Basset_hound_01034.jpg: 
+Real:               basset hound   Classifier:           basset, basset hound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    cat_07.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+    Golden_retriever_05182.jpg: 
+Real:           golden retriever   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+              Beagle_01170.jpg: 
+Real:                     beagle   Classifier:  walker hound, walker foxhound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  3  N NotDog Images:  1 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  66.7
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  3  N NotDog Images:  1 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  66.7
+
+** Results for CNN Model Architecture: VGG
+
+Number of Images:  4
+Number of Dog Images:  3
+Number of Not-a-Dog Images:  1
+
+% Correct Dogs:  100.0
+% Correct Not-a-Dog:  100.0
+% Correct Breed:  66.66666666666666
+
+Misclassified Dog Breeds:
+Pet Label: beagle, Classifier Label: walker hound, walker foxhound
+
+** Total Elapsed Runtime: 0:0:0
