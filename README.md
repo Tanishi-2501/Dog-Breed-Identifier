@@ -36,6 +36,7 @@ pip install -r requirements.txt
 
 # Usage
 <br>
+
 # Command Line Arguments
 <br>
 The script check_images.py accepts the following command line arguments:
@@ -50,30 +51,6 @@ The script check_images.py accepts the following command line arguments:
 <br>
 The script will classify the images, compare the results with the true labels, and output the classification performance, including metrics like accuracy, percentage of correct breed classifications, and other relevant statistics. <br>
 
-
-<br>
-<br>
-<br>
-<br>
-
-pretrained-image-classifier/
-│
-├── pet_images/                   # Directory containing pet images
-│
-├── dognames.txt                  # File containing the list of dog breed names
-│
-├── get_input_args.py             # Function to get command line arguments
-├── get_pet_labels.py             # Function to extract pet labels from filenames
-├── classify_images.py            # Function to classify images using a CNN model
-├── adjust_results4_isadog.py     # Function to adjust results to determine if the classifier correctly identified dogs
-├── calculates_results_stats.py   # Function to calculate classification statistics
-├── print_results.py              # Function to print results
-├── check_images.py               # Main script to run the classification process
-│
-├── requirements.txt              # List of required Python packages
-├── README.md                     # Project README file
-
-<br>
 <br>
 
 # Contributing
