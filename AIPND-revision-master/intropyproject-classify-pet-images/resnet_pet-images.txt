@@ -1,0 +1,43 @@
+Command Line Arguments:
+     dir = pet_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 2 key-value pairs.
+Below are 2 of them:
+ 1 key:                    image_1.jpg  label:           golden retriever
+ 2 key:                    image_2.jpg  label:         labrador retriever
+
+     MATCH:
+
+                   image_1.jpg: 
+Real:           golden retriever   Classifier:               golden retriever
+
+ NOT A MATCH:
+
+                   image_2.jpg: 
+Real:         labrador retriever   Classifier:                         beagle
+
+# Total Images 2 # Matches: 1 # NOT Matches: 1
+
+     MATCH:
+
+                   image_1.jpg: 
+Real:           golden retriever   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+                   image_2.jpg: 
+Real:         labrador retriever   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 2 # Matches: 1 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images: 40  N Dog Images: 30  N NotDog Images: 10 
+Pct Corr dog:  90.0 Pct Corr NOTdog:  80.0  Pct Corr Breed:  85.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  2  N Dog Images:  2  N NotDog Images:  0 
+Pct Corr dog:  50.0 Pct Corr NOTdog:   0.0  Pct Corr Breed:  50.0
